@@ -1,0 +1,17 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:complexType name="IDType">
+    <xs:attribute name="primary" type="xs:boolean" use="optional" />
+    <xs:attribute name="source" type="xs:string" use="required" />
+  </xs:complexType>
+
+  <xs:element name="IDS">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ID" type="IDType" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:assert test="count(.//ID[@primary = true()]) &lt; 2" />
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>
