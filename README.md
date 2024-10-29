@@ -6,7 +6,7 @@ The xsd:assert tag should live inside the xsd:complexType of the element it refe
 
 ## Xpath
 
-Attributes seem to live inside brackets of elements addressed with an @ prefix.
+Attributes live inside brackets after elements, addressed with an @ prefix.
 
 
 ## Assert Test Syntax
