@@ -2,9 +2,10 @@
 """Run validation on an xsd:assert example."""
 
 import xmlschema
-schema = xmlschema.XMLSchema11('ids.xsd')
 
 def main():
+    schema = xmlschema.XMLSchema11('ids.xsd')
+
     print("This should pass:", flush=True)
     schema.validate("ids_pass.xml")
 
