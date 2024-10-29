@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-
+"""Run validation on an xsd:assert example."""
 
 import xmlschema
 schema = xmlschema.XMLSchema11('ids.xsd')
