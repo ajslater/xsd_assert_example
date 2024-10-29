@@ -10,7 +10,7 @@
       <xs:sequence>
         <xs:element name="ID" type="IDType" minOccurs="0" maxOccurs="unbounded"/>
       </xs:sequence>
-      <xs:assert test="count(.//ID[@primary = true()]) &lt; 2" />
+      <xs:assert test="count(ID[@primary = true()]) &lt; 2" />
     </xs:complexType>
   </xs:element>
 
